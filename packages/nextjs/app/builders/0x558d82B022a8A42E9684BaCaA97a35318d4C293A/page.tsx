@@ -75,7 +75,7 @@ const BagusinoPage: NextPage = () => {
           </a>
           <a
             href="mailto:0xbagusino@gmail.com"
-            className="text-black hover:text-blue-400 dark:text-white dark:hover:text-blue-400900"
+            className="text-black hover:text-blue-400 dark:text-white dark:hover:text-blue-400"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 12.713l11.985-7.99A1.5 1.5 0 0022.5 3h-21a1.5 1.5 0 00-1.485 1.723L12 12.713zM12 14.287L.015 6.297A1.5 1.5 0 000 7.5v9a1.5 1.5 0 001.5 1.5h21a1.5 1.5 0 001.5-1.5v-9a1.5 1.5 0 00-.015-.203L12 14.287z" />
