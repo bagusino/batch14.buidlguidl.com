@@ -14,6 +14,22 @@ const nextConfig = {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     return config;
   },
+  images: {
+    domains: ['static.vecteezy.com', 'upload.wikimedia.org', 'cdn-icons-png.flaticon.com', 'pbs.twimg.com'],
+    remotePatterns: [{
+      protocol: "https",
+      hostname: "avatars.githubusercontent.com",
+      port: "",
+      pathname: "/**",
+    },
+    {
+      protocol: "https",
+      hostname: "api.iconify.design",
+      port: "",
+      pathname: "/**",
+    },
+    ],
+  },
 };
 
 const isIpfs = process.env.NEXT_PUBLIC_IPFS_BUILD === "true";
@@ -23,6 +39,19 @@ if (isIpfs) {
   nextConfig.trailingSlash = true;
   nextConfig.images = {
     unoptimized: true,
+    remotePatterns: [{
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "api.iconify.design",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   };
 }
 
