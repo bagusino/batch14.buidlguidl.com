@@ -15,6 +15,8 @@ const nextConfig = {
     return config;
   },
   images: {
+
+    domains: ['static.vecteezy.com', 'upload.wikimedia.org', 'cdn-icons-png.flaticon.com', 'pbs.twimg.com'],
     remotePatterns: [{
       protocol: "https",
       hostname: "avatars.githubusercontent.com",
