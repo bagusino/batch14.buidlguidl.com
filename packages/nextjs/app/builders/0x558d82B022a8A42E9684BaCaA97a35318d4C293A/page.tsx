@@ -37,7 +37,7 @@ const BagusinoPage: NextPage = () => {
               data-tip="Look for your physical cold wallet Certifications 👀"
             >
               <div className="text-black dark:text-white font-bold group-hover:underline"> Common Criteria </div>
-            </div>
+            </div>{" "}
             Certification in international markets. I am passionate about Blockchain and its potential to change the
             world. Now, I{"'"}m focused on improving my skills and looking for new opportunities to grow professionally
             in this field.
