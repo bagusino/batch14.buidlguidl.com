@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { NextPage } from "next";
 import { BuidlGuidlLogo } from "~~/components/assets/BuidlGuidlLogo";
-import { Address, Balance } from "~~/components/scaffold-eth";
+import { Address } from "~~/components/scaffold-eth";
 
 const address = "0xcC6eDeB501BbD8AD9E028BDe937B63Cdd64A1D91";
 
@@ -56,10 +56,6 @@ const AgooniPage: NextPage = () => {
           {address && (
             <div className="flex flex-col items-center gap-4 mb-4">
               <Address address={address} size="3xl" />
-              <div className="mt-2 text-lg flex items-center">
-                <span className="font-bold">My Riches:</span>
-                <Balance address={address} />
-              </div>
             </div>
           )}
         </div>
